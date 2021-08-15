@@ -10,24 +10,30 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
-  get _googleSignIn => null;
+  Future<void> _googleSignUp() async {
+    try {
+      final GoogleSignIn _googleSignIn = GoogleSignIn(
+        scopes: ['email'],
+      );
+      final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  get _auth => null;
+      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
+      final GoogleSignInAuthentication googleAuth =
+          await googleUser!.authentication;
 
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
 
-   Future<User> _googleSignUp() async {
-  final GoogleSignInAccount googleUser = await _googleSignIn.signIn();
-  final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+      final User? user = (await _auth.signInWithCredential(credential)).user;
+      print("signed in ");
 
-  final AuthCredential credential = GoogleAuthProvider.credential(
-    accessToken: googleAuth.accessToken,
-    idToken: googleAuth.idToken,
-  );
-
-  final User user = (await _auth.signInWithCredential(credential)).user;
-  print("signed in ");
-  return user;
-}
+     //return user;
+    } catch (e) {
+      //print(e.message);
+    }
+  }
 
 
   @override
