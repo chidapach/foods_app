@@ -91,12 +91,118 @@ class HomeScreen extends StatelessWidget {
       );
   }
 
+  Widget listTile({required IconData icon, required String title}) {
+    return ListTile(
+      leading: Icon(
+        icon,
+        size: 32,
+        color: Colors.white54,
+      ),
+      title: Text(
+      title,
+      style: TextStyle(color: Colors.white54),),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       //backgroundColor: Color(0XF7D294),
       backgroundColor: Colors.orange.shade100,
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Container(
+          color: Colors.orange.shade900,
+          child: ListView(
+            children: [
+              DrawerHeader(
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.white54,
+                      radius: 43,
+                      child: CircleAvatar(
+                        radius: 40,
+                        backgroundColor: Colors.red,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("Welcome Guest"),
+                        SizedBox(
+                          height: 7,
+                        ),
+                        Container(
+                          height: 30,
+                          child: OutlineButton(
+                            onPressed: () {},
+                            child: Text("Login"),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15),
+                              side: BorderSide(
+                                width: 2
+                              )
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ],
+                ),
+                
+              ),
+              listTile(icon: Icons.home_outlined,title: "Home"),
+              listTile(icon: Icons.shop_outlined,title: "Review Cart"),
+              listTile(icon: Icons.person_outlined,title: "My Profile"),
+              listTile(icon: Icons.notifications_outlined,title: "Notification"),
+              listTile(icon: Icons.star_outlined,title: "Rating & Review"),
+              listTile(icon: Icons.favorite_outlined,title: "Wishlist"),
+              listTile(icon: Icons.copy_outlined,title: "Raise a Complaint"),
+              listTile(icon: Icons.format_quote_outlined,title: "FAQs"),
+              Container(
+                height: 350,
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Contact Support",style: TextStyle(color: Colors.white54),),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Row(
+                      children: [
+                        Text("Call us:",style: TextStyle(color: Colors.white54),),
+                        Text("+077286602",style: TextStyle(color: Colors.white54),),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                     SingleChildScrollView(
+                       scrollDirection: Axis.horizontal,
+                       child: Row(
+                        children: [
+                          Text("Mail us:",style: TextStyle(color: Colors.white54),),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text("+077286602",style: TextStyle(color: Colors.white54),),
+                        ],
+                    ),
+                     ),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
         title: Text("Food",style: TextStyle(
