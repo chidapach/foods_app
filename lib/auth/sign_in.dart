@@ -26,6 +26,7 @@ class _SignInState extends State<SignIn> {
         idToken: googleAuth.idToken,
       );
 
+      // ignore: unused_local_variable
       final User? user = (await _auth.signInWithCredential(credential)).user;
       print("signed in ");
 

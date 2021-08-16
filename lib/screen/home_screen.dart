@@ -1,95 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:foods_app/screen/product_overview.dart';
+//import 'package:foods_app/screen/product_overview.dart';
+import 'package:foods_app/screen/singal_product.dart';
+
 
 class HomeScreen extends StatelessWidget {
 
-  Widget singalProducts(){
-    return  Container(
-      margin: EdgeInsets.symmetric(horizontal: 5),
-                height: 230,
-                width: 150,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start ,
-                  children: [
-                    Expanded(
-                      flex: 2,
-                      child: Image.network(
-                        'http://pngimg.com/uploads/noodle/noodle_PNG78.png')
-                    ),
-                    Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Text('Noodle',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
-                              Text('50\$/1 ',style: TextStyle(color: Colors.grey),),
-
-                              Row(
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      padding: EdgeInsets.only(left: 5),
-                                      height: 30,
-                                      width: 50,
-                                      decoration: BoxDecoration(
-                                        
-                                        border: Border.all(
-                                        ),
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
-                                      child: Row(
-                                        children: [
-                                          Expanded(child: Text('1 piece',
-                                          style: TextStyle(fontSize: 10),),
-                                          ),
-                                          Center(
-                                      child: Icon(
-                                      Icons.arrow_drop_down,
-                                        size: 20,
-                                    color: Colors.orange,),
-                                  ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  Expanded(
-                                    child: Container(
-                                      height: 30,
-                                      width: 50,
-                                      decoration: BoxDecoration(
-                                        border: Border.all(),
-                                        borderRadius: BorderRadius.circular(8)
-                                      ),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                        children: [
-                                          Icon(Icons.remove, size: 15,color: Colors.orange,),
-                                          Text('1',style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold),),
-                                          Icon(Icons.add, size: 15,color: Colors.orange,)
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  
-                                ],
-                              )
-                              
-                          ],),
-                        ),
-                      ),
-                  ],
-                ),
-                
-
-      );
-  }
 
   Widget listTile({required IconData icon, required String title}) {
     return ListTile(
@@ -137,6 +53,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Container(
                           height: 30,
+                          // ignore: deprecated_member_use
                           child: OutlineButton(
                             onPressed: () {},
                             child: Text("Login"),
@@ -320,11 +237,81 @@ class HomeScreen extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                singalProducts(),
-                singalProducts(),
-                singalProducts(),
-                singalProducts(),
-                singalProducts(),
+                
+                SingalProduct(
+                  productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png',
+                  productName: 'Noodle', 
+                   
+                  onTap: (){
+                    
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ProductOverview(
+                      productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png', 
+                      productName: 'Noodle'
+                      )),
+                    );
+                    // Navigator.of(context).push(
+                    //   MaterialPageRoute(
+                    //     builder: (context) => ProductOverview(
+                    //       productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png',
+                    //     productName: 'Noodle',
+                    //     ),
+                    // ),
+                   //);
+                 },
+                 
+                  ),
+                SingalProduct(productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG66.png',
+                productName: 'Spagetti',
+                onTap: (){
+                  // Navigator.of(context).push(
+                  //     MaterialPageRoute(
+                  //       builder: (context) => ProductOverview(
+                  //         productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG66.png',
+                  //       productName: 'Spagetti',
+                  //       ),
+                  //   ),
+                  //  );
+                },),
+                SingalProduct(productImage: 'https://www.pngkey.com/png/full/11-115437_free-png-fried-chicken-png-images-transparent-fried.png',
+                productName: 'Fire Chicken', 
+                onTap: (){
+                  // Navigator.of(context).push(
+                  //     MaterialPageRoute(
+                  //       builder: (context) => ProductOverview(
+                  //         productImage: 'https://www.pngkey.com/png/full/11-115437_free-png-fried-chicken-png-images-transparent-fried.png',
+                  //       productName: 'Fire Chicken',
+                  //       ),
+                  //   ),
+                  //  );
+                },),
+                SingalProduct(productImage: 'https://huasenghong.co.th/wp-content/uploads/2018/02/WM-ข้าวผัดกุ้ง.png',
+                productName: 'Fire Rice', 
+                onTap: (){
+                  // Navigator.of(context).push(
+                  //     MaterialPageRoute(
+                  //       builder: (context) => ProductOverview(
+                  //         productImage: 'https://lh3.googleusercontent.com/proxy/629tzGlO_w4l9nB2NTZXCcCfzaHHooHsdB5YukMr-j8yW_UwmWFbWg9T7KaUPKvCW9jPElEzDHZbOjrfQ4p3ZLQEWWGLgh0DS1-NPICAY3Oicgo',
+                  //       productName: 'Fire Rice',
+                  //       ),
+                  //   ),
+                  //  );
+                },),
+                SingalProduct(productImage: 'https://www.rosdee.co.th/wp-content/uploads/2017/09/Tom-Yum-Creamy-ต้มยำกุ้งน้ำข้น.png',
+                productName: 'Tom Yum Kung', 
+                onTap: (){
+                  // Navigator.of(context).push(
+                  //     MaterialPageRoute(
+                  //       builder: (context) => ProductOverview(
+                  //         productImage: 'https://www.rosdee.co.th/wp-content/uploads/2017/09/Tom-Yum-Creamy-ต้มยำกุ้งน้ำข้น.png',
+                  //       productName: 'Tom Yum Kung',
+                  //       ),
+                  //   ),
+                  //  );
+                },)
+                
+               
               ],
             ),
           ),
@@ -342,11 +329,54 @@ class HomeScreen extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                singalProducts(),
-                singalProducts(),
-                singalProducts(),
-                singalProducts(),
-                singalProducts(),
+               SingalProduct(productImage: 'https://www.pngarts.com/files/2/Salad-PNG-Image.png',
+               productName: 'Salad', 
+               onTap: (){
+                //  Navigator.of(context).push(
+                //       MaterialPageRoute(
+                //         builder: (context) => ProductOverview(
+                //           productImage: 'https://www.pngarts.com/files/2/Salad-PNG-Image.png',
+                //         productName: 'Salad',
+                //         ),
+                //     ),
+                //    );
+               },),
+               SingalProduct(productImage: 'https://beyondthefitthailandblog.files.wordpress.com/2017/06/burger-png-file.png?w=810',
+               productName: 'Burger', 
+               onTap: (){
+                //  Navigator.of(context).push(
+                //       MaterialPageRoute(
+                //         builder: (context) => ProductOverview(
+                //           productImage: 'https://beyondthefitthailandblog.files.wordpress.com/2017/06/burger-png-file.png?w=810',
+                //         productName: 'Burger',
+                //         ),
+                //     ),
+                //    );
+               },),
+               SingalProduct(productImage: 'http://pngimg.com/uploads/hot_dog/hot_dog_PNG10217.png',
+               productName: 'Hotdog', 
+               onTap: (){
+                //  Navigator.of(context).push(
+                //       MaterialPageRoute(
+                //         builder: (context) => ProductOverview(
+                //           productImage: 'http://pngimg.com/uploads/hot_dog/hot_dog_PNG10217.png',
+                //         productName: 'Hotdog',
+                //         ),
+                //     ),
+                //    );
+               },),
+               SingalProduct(productImage: 'https://www.nicepng.com/png/full/68-689198_pizza-download-png-image-meat-pizza-png.png',
+               productName: 'Pizza', 
+               onTap: (){
+                //  Navigator.of(context).push(
+                //       MaterialPageRoute(
+                //         builder: (context) => ProductOverview(
+                //           productImage: 'https://www.nicepng.com/png/full/68-689198_pizza-download-png-image-meat-pizza-png.png',
+                //         productName: 'Pizza',
+                //         ),
+                //     ),
+                //    );
+               },),
               ],
             ),
           ), 
