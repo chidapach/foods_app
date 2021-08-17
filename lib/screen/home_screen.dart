@@ -1,4 +1,7 @@
+
+
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:foods_app/screen/product_overview.dart';
 //import 'package:foods_app/screen/product_overview.dart';
 import 'package:foods_app/screen/singal_product.dart';
@@ -23,6 +26,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     // backgroundColor: Colors.black,
       //backgroundColor: Color(0XF7D294),
       backgroundColor: Colors.orange.shade100,
       drawer: Drawer(
@@ -236,79 +240,72 @@ class HomeScreen extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
+              
               children: [
                 
                 SingalProduct(
                   productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png',
-                  productName: 'Noodle', 
+                  productName: 'Noodle',
+                 onTap: () {
                    
-                  onTap: (){
-                    
-                    Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ProductOverview(
-                      productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png', 
-                      productName: 'Noodle'
-                      )),
-                    );
-                    // Navigator.of(context).push(
-                    //   MaterialPageRoute(
-                    //     builder: (context) => ProductOverview(
-                    //       productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png',
-                    //     productName: 'Noodle',
-                    //     ),
-                    // ),
-                   //);
-                 },
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                        productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png',
+                        productName: 'Noodle',
+                      ),
+                    ),
+                   );
+                },
                  
                   ),
                 SingalProduct(productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG66.png',
                 productName: 'Spagetti',
-                onTap: (){
-                  // Navigator.of(context).push(
-                  //     MaterialPageRoute(
-                  //       builder: (context) => ProductOverview(
-                  //         productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG66.png',
-                  //       productName: 'Spagetti',
-                  //       ),
-                  //   ),
-                  //  );
+                onTap: () => {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG66.png',
+                        productName: 'Spagetti',
+                        ),
+                    ),
+                   )
                 },),
                 SingalProduct(productImage: 'https://www.pngkey.com/png/full/11-115437_free-png-fried-chicken-png-images-transparent-fried.png',
                 productName: 'Fire Chicken', 
                 onTap: (){
-                  // Navigator.of(context).push(
-                  //     MaterialPageRoute(
-                  //       builder: (context) => ProductOverview(
-                  //         productImage: 'https://www.pngkey.com/png/full/11-115437_free-png-fried-chicken-png-images-transparent-fried.png',
-                  //       productName: 'Fire Chicken',
-                  //       ),
-                  //   ),
-                  //  );
+                  Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productImage: 'https://www.pngkey.com/png/full/11-115437_free-png-fried-chicken-png-images-transparent-fried.png',
+                        productName: 'Fire Chicken',
+                        ),
+                    ),
+                   );
                 },),
                 SingalProduct(productImage: 'https://huasenghong.co.th/wp-content/uploads/2018/02/WM-ข้าวผัดกุ้ง.png',
                 productName: 'Fire Rice', 
                 onTap: (){
-                  // Navigator.of(context).push(
-                  //     MaterialPageRoute(
-                  //       builder: (context) => ProductOverview(
-                  //         productImage: 'https://lh3.googleusercontent.com/proxy/629tzGlO_w4l9nB2NTZXCcCfzaHHooHsdB5YukMr-j8yW_UwmWFbWg9T7KaUPKvCW9jPElEzDHZbOjrfQ4p3ZLQEWWGLgh0DS1-NPICAY3Oicgo',
-                  //       productName: 'Fire Rice',
-                  //       ),
-                  //   ),
-                  //  );
+                  Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productImage: 'https://lh3.googleusercontent.com/proxy/629tzGlO_w4l9nB2NTZXCcCfzaHHooHsdB5YukMr-j8yW_UwmWFbWg9T7KaUPKvCW9jPElEzDHZbOjrfQ4p3ZLQEWWGLgh0DS1-NPICAY3Oicgo',
+                        productName: 'Fire Rice',
+                        ),
+                    ),
+                   );
                 },),
                 SingalProduct(productImage: 'https://www.rosdee.co.th/wp-content/uploads/2017/09/Tom-Yum-Creamy-ต้มยำกุ้งน้ำข้น.png',
                 productName: 'Tom Yum Kung', 
                 onTap: (){
-                  // Navigator.of(context).push(
-                  //     MaterialPageRoute(
-                  //       builder: (context) => ProductOverview(
-                  //         productImage: 'https://www.rosdee.co.th/wp-content/uploads/2017/09/Tom-Yum-Creamy-ต้มยำกุ้งน้ำข้น.png',
-                  //       productName: 'Tom Yum Kung',
-                  //       ),
-                  //   ),
-                  //  );
+                  Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productImage: 'https://www.rosdee.co.th/wp-content/uploads/2017/09/Tom-Yum-Creamy-ต้มยำกุ้งน้ำข้น.png',
+                        productName: 'Tom Yum Kung',
+                        ),
+                    ),
+                   );
                 },)
                 
                
@@ -332,50 +329,50 @@ class HomeScreen extends StatelessWidget {
                SingalProduct(productImage: 'https://www.pngarts.com/files/2/Salad-PNG-Image.png',
                productName: 'Salad', 
                onTap: (){
-                //  Navigator.of(context).push(
-                //       MaterialPageRoute(
-                //         builder: (context) => ProductOverview(
-                //           productImage: 'https://www.pngarts.com/files/2/Salad-PNG-Image.png',
-                //         productName: 'Salad',
-                //         ),
-                //     ),
-                //    );
+                 Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productImage: 'https://www.pngarts.com/files/2/Salad-PNG-Image.png',
+                        productName: 'Salad',
+                        ),
+                    ),
+                   );
                },),
                SingalProduct(productImage: 'https://beyondthefitthailandblog.files.wordpress.com/2017/06/burger-png-file.png?w=810',
                productName: 'Burger', 
                onTap: (){
-                //  Navigator.of(context).push(
-                //       MaterialPageRoute(
-                //         builder: (context) => ProductOverview(
-                //           productImage: 'https://beyondthefitthailandblog.files.wordpress.com/2017/06/burger-png-file.png?w=810',
-                //         productName: 'Burger',
-                //         ),
-                //     ),
-                //    );
+                 Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productImage: 'https://beyondthefitthailandblog.files.wordpress.com/2017/06/burger-png-file.png?w=810',
+                        productName: 'Burger',
+                        ),
+                    ),
+                   );
                },),
                SingalProduct(productImage: 'http://pngimg.com/uploads/hot_dog/hot_dog_PNG10217.png',
                productName: 'Hotdog', 
                onTap: (){
-                //  Navigator.of(context).push(
-                //       MaterialPageRoute(
-                //         builder: (context) => ProductOverview(
-                //           productImage: 'http://pngimg.com/uploads/hot_dog/hot_dog_PNG10217.png',
-                //         productName: 'Hotdog',
-                //         ),
-                //     ),
-                //    );
+                 Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productImage: 'http://pngimg.com/uploads/hot_dog/hot_dog_PNG10217.png',
+                        productName: 'Hotdog',
+                        ),
+                    ),
+                   );
                },),
                SingalProduct(productImage: 'https://www.nicepng.com/png/full/68-689198_pizza-download-png-image-meat-pizza-png.png',
                productName: 'Pizza', 
                onTap: (){
-                //  Navigator.of(context).push(
-                //       MaterialPageRoute(
-                //         builder: (context) => ProductOverview(
-                //           productImage: 'https://www.nicepng.com/png/full/68-689198_pizza-download-png-image-meat-pizza-png.png',
-                //         productName: 'Pizza',
-                //         ),
-                //     ),
-                //    );
+                 Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productImage: 'https://www.nicepng.com/png/full/68-689198_pizza-download-png-image-meat-pizza-png.png',
+                        productName: 'Pizza',
+                        ),
+                    ),
+                   );
                },),
               ],
             ),

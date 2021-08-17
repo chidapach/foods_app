@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:foods_app/screen/home_screen.dart';
+// ignore: unused_import
+import 'package:foods_app/screen/product_overview.dart';
 
 class SingalProduct extends StatelessWidget {
   final String productImage;
   final String productName;
   final Function onTap;
 
-  SingalProduct({required this.productImage, required this.productName,required this.onTap });
+  SingalProduct({required this.productImage, required this.productName,
+  required this.onTap
+   });
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +31,8 @@ class SingalProduct extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start ,
                       children: [
                         GestureDetector(
-                          onTap: onTap(),
+                         //onTap: onTap(),
+                          onTap: () => onTap(),
                           child: Container(
                             height: 150,
                             padding: EdgeInsets.all(5),

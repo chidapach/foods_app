@@ -68,7 +68,8 @@ class _ProductOverviewState extends State<ProductOverview> {
         ],
       ),
       appBar: AppBar(
-        iconTheme: IconThemeData(color: textColor),
+        iconTheme: IconThemeData(color: Colors.black45),
+        
         backgroundColor: Colors.orange.shade900,
         title: Text(
           "Product Overview",
@@ -76,6 +77,7 @@ class _ProductOverviewState extends State<ProductOverview> {
             color: textColor,
           ),
         ),
+        
       ),
       body: Column(
         children: [
