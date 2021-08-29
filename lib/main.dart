@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:foods_app/auth/sign_in.dart';
 import 'package:firebase_core/firebase_core.dart';
 // ignore: unused_import
-import 'package:foods_app/screen/home_screen.dart';
 // import 'package:foods_app/screen/home_screen.dart';
 
 void main()async {
