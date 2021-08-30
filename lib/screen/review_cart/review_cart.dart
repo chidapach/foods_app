@@ -33,8 +33,8 @@ class ReviewCart extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          SingleItem(isBool: true),
-           SingleItem(isBool: true),
+          SingleItem(isBool: true, productImage: '', productName: '', productPrice: 20,),
+           SingleItem(isBool: true, productImage: '', productName: '', productPrice: 0,),
           
           // SingleItem(),
           // SingleItem(),

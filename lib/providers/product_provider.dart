@@ -6,6 +6,14 @@ class ProductProvider with ChangeNotifier {
 
 late ProductModel productModel;
 
+productModels(QueryDocumentSnapshot element){
+  productModel = ProductModel(
+    productImage: element.get("productImage"),
+    productName: element.get("productName"),
+    productPrice: element.get("productPrice")
+    );
+}
+
 ///////////////foodsProduct//////////////////
 List<ProductModel> foodsProductList = [];
   
@@ -16,11 +24,12 @@ QuerySnapshot value = await FirebaseFirestore.instance.collection("FoodsProduct"
 value.docs.forEach(
   (element) {
     //print(element.data());
-    productModel = ProductModel(
-      productImage: element.get("productImage"),
-      productName: element.get("productName"),
-      productPrice: element.get("productPrice"),
-    );
+    // productModel = ProductModel(
+    //   productImage: element.get("productImage"),
+    //   productName: element.get("productName"),
+    //   productPrice: element.get("productPrice"),
+    // );
+      productModels(element);
       newList.add(productModel);
       }
    );
@@ -40,11 +49,12 @@ QuerySnapshot value = await FirebaseFirestore.instance.collection("RecommendProd
 
 value.docs.forEach(
   (element) {
-    productModel = ProductModel(
-      productImage: element.get("productImage"),
-      productName: element.get("productName"),
-      productPrice: element.get("productPrice"),
-    );
+    // productModel = ProductModel(
+    //   productImage: element.get("productImage"),
+    //   productName: element.get("productName"),
+    //   productPrice: element.get("productPrice"),
+    // );
+      productModels(element);
       newList.add(productModel);
       }
    );
@@ -64,11 +74,12 @@ QuerySnapshot value = await FirebaseFirestore.instance.collection("PopularProduc
 
 value.docs.forEach(
   (element) {
-    productModel = ProductModel(
-      productImage: element.get("productImage"),
-      productName: element.get("productName"),
-      productPrice: element.get("productPrice"),
-    );
+    // productModel = ProductModel(
+    //   productImage: element.get("productImage"),
+    //   productName: element.get("productName"),
+    //   productPrice: element.get("productPrice"),
+    // );
+      productModels(element);
       newList.add(productModel);
       }
    );

@@ -45,10 +45,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
   @override
   Widget build(BuildContext context) {
-    // ProductProvider productProvider = Provider.of(context,);
     productProvider = Provider.of(context);
     return Scaffold(
-      //backgroundColor: Color(0XF7D294),
       backgroundColor: Colors.orange.shade50,
       drawer: DrawerSide(),
       appBar: AppBar(
@@ -64,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
             backgroundColor: Colors.orange.shade300,
             child: IconButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Search(),),);
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Search(search: [],),),);
               },
               icon: Icon(
               Icons.search, size: 17,color: Colors.black,),)
@@ -165,7 +163,13 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Top foods',style: TextStyle(fontWeight: FontWeight.bold)),
-                Text('view all', style: TextStyle(color: Colors.black45),)
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Search(
+                      search: productProvider.getFoodsProductDataList,
+                    )),);
+                  },
+                  child: Text('view all', style: TextStyle(color: Colors.black45),))
               ],
             ),
         ),
@@ -203,7 +207,13 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Recommend foods', style: TextStyle(fontWeight: FontWeight.bold),),
-                Text('view all', style: TextStyle(color: Colors.black45),)
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Search(
+                      search: productProvider.getRecommendProductDataList,
+                    )),);
+                  },
+                  child: Text('view all', style: TextStyle(color: Colors.black45),))
               ],
             ),
         ),
@@ -239,7 +249,13 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Popular foods',style: TextStyle(fontWeight: FontWeight.bold)),
-                Text('view all', style: TextStyle(color: Colors.black45),)
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Search(
+                      search: productProvider.getPopularProductDataList,
+                    )),);
+                  },
+                  child: Text('view all', style: TextStyle(color: Colors.black45),))
               ],
             ),
         ),

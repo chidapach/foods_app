@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foods_app/screen/home/home_screen.dart';
 import 'package:foods_app/screen/my_profile/my_profile.dart';
 import 'package:foods_app/screen/review_cart/review_cart.dart';
 
@@ -67,7 +68,9 @@ class DrawerSide extends StatelessWidget {
                   ],
                 ),
               ),
-              listTile(iconData: Icons.home_outlined,title: "Home",onTap: (){}),
+              listTile(iconData: Icons.home_outlined,title: "Home",onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomeScreen(),),);
+              }),
               listTile(iconData: Icons.shop_outlined,title: "Review Cart",onTap: (){
                 Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ReviewCart(),),);
               }),

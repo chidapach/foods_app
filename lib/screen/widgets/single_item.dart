@@ -3,21 +3,26 @@ import 'package:foods_app/config/color.dart';
 
 class SingleItem extends StatelessWidget {
   bool isBool = false;
-  SingleItem({required this.isBool});
+  String productImage;
+  String productName;
+  int productPrice;
+  SingleItem({required this.isBool, required this.productImage, required this.productName, required this.productPrice});
   
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 5),
           child: Row(
             children: [
               Expanded(
                 child: Container(
                   height: 100,
                   child: Center(
-                   child: Image.network("http://pngimg.com/uploads/noodle/noodle_PNG66.png"),
+                   child: Image.network(
+                     productImage,
+                     ),
                   ),
                 ),
               ),
@@ -27,18 +32,18 @@ class SingleItem extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: isBool==false ? 
                     MainAxisAlignment.spaceAround
-                    : MainAxisAlignment.spaceEvenly,
+                    : MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Column(
                         children: [
                           Text(
-                            "productName",
+                            productName,
                           style: TextStyle(
                             color: Colors.black,fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            "50\$",
+                            "$productPrice\$",
                           style: TextStyle(
                             color: Colors.black,
                             
@@ -83,7 +88,7 @@ class SingleItem extends StatelessWidget {
               Expanded(
                 child: Container(
                   height: 100,
-                  padding: isBool==false? EdgeInsets.symmetric(horizontal: 15,vertical: 32):EdgeInsets.only(left: 15, right: 15),
+                  padding: isBool==false? EdgeInsets.symmetric(horizontal: 25,vertical: 12):EdgeInsets.only(left: 15, right: 15),
                   child: EdgeInsets==false? 
                   Container(
                     height: 25,
@@ -118,7 +123,7 @@ class SingleItem extends StatelessWidget {
                       color: Colors.black,
                       ),
                       SizedBox(
-                        height: 5,
+                        height: 15,
                       ),
                       Container(
                     height: 25,
@@ -134,7 +139,7 @@ class SingleItem extends StatelessWidget {
                           Icon(
                             Icons.add,
                             color: Colors.orange.shade900,
-                            size: 20,
+                            size: 14,
                           ),
                            Text(
                             "ADD",

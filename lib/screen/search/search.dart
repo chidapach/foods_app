@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:foods_app/models/product_model.dart';
 import 'package:foods_app/screen/widgets/single_item.dart';
 
-class Search extends StatelessWidget {
+class Search extends StatefulWidget {
+  final List<ProductModel>search;
+  Search({required this.search});
 
+  @override
+  _SearchState createState() => _SearchState();
+}
+
+class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,14 +48,17 @@ class Search extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-           SingleItem(isBool: false),
-            SingleItem(isBool: false),
-             SingleItem(isBool: false),
-              SingleItem(isBool: false),
-          // SingleItem(),
-          // SingleItem(),
-          // SingleItem(),
-          // SingleItem(),
+          Column(
+            children: widget.search.map((data) {
+                return SingleItem(
+                  isBool: false, 
+                  productImage: data.productImage, 
+                  productName: data.productName, 
+                  productPrice: data.productPrice,
+                );
+              }).toList(),
+          )
+           
         ],
       ),
     );
