@@ -6,10 +6,12 @@ INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/s
 INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
 MERGED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
 MERGED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:google_sign_in] /Users/chidapachirathumkul/flutter_project/foods_app/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/b4a4014129b3788b127cdbffbd32c6ed/jetified-firebase-analytics-19.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:17:1-83:12
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/2b298d710992f12b9e2e0e6710dea16b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:2:1-24:12
@@ -17,6 +19,7 @@ MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/chidapachirathum
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/96aeeaf8fa26acce46539fdddf7d0ec8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/4137babf2606acb1e424ad3914d5b8b3/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/f263fcb179e74220f9266564bf6fa6b0/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/369c59889e801cc817dee2786a28ea2c/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/9317e99192d0a18ac742a2d90dd9d0a8/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/aeeb1e4fe2ca79c5fce4f4c93fd6cd85/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:17:1-46:12
@@ -57,6 +60,8 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chidapachirathumku
 MERGED from [androidx.print:print:1.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/8b0cce3f36a1c28e7df6e72849a13547/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/1d4efdb868696ea36efd004abeb8239d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/9dc01f80be5d003ac3d9f81c085f13fd/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/28fc14dd71318110837ca9c868d23487/jetified-grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/073fa8f73d9db3fc6f27ad8d002d7cd7/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -78,12 +83,16 @@ application
 ADDED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/main/AndroidManifest.xml:3:4-40:19
 MERGED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/b4a4014129b3788b127cdbffbd32c6ed/jetified-firebase-analytics-19.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/b4a4014129b3788b127cdbffbd32c6ed/jetified-firebase-analytics-19.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/2b298d710992f12b9e2e0e6710dea16b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
@@ -174,6 +183,8 @@ INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/s
 INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/main/AndroidManifest.xml
 MERGED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in] /Users/chidapachirathumkul/flutter_project/foods_app/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in] /Users/chidapachirathumkul/flutter_project/foods_app/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -182,6 +193,8 @@ MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/chidapachirat
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/b4a4014129b3788b127cdbffbd32c6ed/jetified-firebase-analytics-19.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/2b298d710992f12b9e2e0e6710dea16b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
@@ -196,6 +209,8 @@ MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/4137babf2606acb1e424ad3914d5b8b3/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/f263fcb179e74220f9266564bf6fa6b0/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/f263fcb179e74220f9266564bf6fa6b0/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/369c59889e801cc817dee2786a28ea2c/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/369c59889e801cc817dee2786a28ea2c/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/9317e99192d0a18ac742a2d90dd9d0a8/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/9317e99192d0a18ac742a2d90dd9d0a8/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/0813e45a0b3806629b40dbeb70c75a60/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
@@ -276,6 +291,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/chidapachirath
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/1d4efdb868696ea36efd004abeb8239d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/9dc01f80be5d003ac3d9f81c085f13fd/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/9dc01f80be5d003ac3d9f81c085f13fd/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/28fc14dd71318110837ca9c868d23487/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/28fc14dd71318110837ca9c868d23487/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/073fa8f73d9db3fc6f27ad8d002d7cd7/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/073fa8f73d9db3fc6f27ad8d002d7cd7/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -290,6 +309,8 @@ MERGED from [:google_sign_in] /Users/chidapachirathumkul/flutter_project/foods_a
 MERGED from [:google_sign_in] /Users/chidapachirathumkul/flutter_project/foods_app/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:14:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
@@ -304,10 +325,14 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /U
 		ADDED from /Users/chidapachirathumkul/flutter_project/foods_app/android/app/src/debug/AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
@@ -328,6 +353,12 @@ ADDED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app
 		ADDED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_auth] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
+ADDED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:cloud_firestore] /Users/chidapachirathumkul/flutter_project/foods_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
 ADDED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
@@ -336,6 +367,8 @@ ADDED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app
 		ADDED from [:firebase_core] /Users/chidapachirathumkul/flutter_project/foods_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:13:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/2b663374f2a3beef67e4fc09532fc190/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
@@ -346,6 +379,8 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/8c8cac11e7d2deba42a4708e8fddbf64/jetified-play-services-measurement-impl-19.0.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e42e9c1cdc922384fa5d6a7feb593c02/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e42e9c1cdc922384fa5d6a7feb593c02/jetified-play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/28fc14dd71318110837ca9c868d23487/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/28fc14dd71318110837ca9c868d23487/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
@@ -416,6 +451,12 @@ ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul
 		ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/cb85e813550ceb859d5d8655b705694f/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:23.0.3] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/e4186c293950d73169b2437483bf0308/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:21:17-111
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/c37ebf3af58e58c84bd675fefbe18a67/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /Users/chidapachirathumkul/.gradle/caches/transforms-2/files-2.1/aeeb1e4fe2ca79c5fce4f4c93fd6cd85/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:25:5-68

@@ -7,7 +7,8 @@ class ProductOverview extends StatefulWidget {
 
   final String productName;
   final String productImage;
-  ProductOverview({required this.productImage,required this.productName});
+  final int productPrice;
+  ProductOverview({required this.productImage,required this.productName,required this.productPrice});
 
   @override
   _ProductOverviewState createState() => _ProductOverviewState();
@@ -128,13 +129,13 @@ class _ProductOverviewState extends State<ProductOverview> {
                                 activeColor: Colors.green[700],
                                 onChanged: (value) {
                                   setState(() {
-                                   // _character = value;
+                                    //_character = value;
                                   });
                                 },
                               ),
                             ],
                           ),
-                          Text("\$50"),
+                          Text("\$${widget.productPrice}"),
                           Container(
                             padding: EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 10),

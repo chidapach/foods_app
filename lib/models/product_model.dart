@@ -3,7 +3,11 @@ class ProductModel {
   String productImage;
   int productPrice;
 
-  ProductModel({required this.productName, required this.productImage, required this.productPrice});
+  ProductModel({
+    required this.productName, 
+    required this.productImage, 
+    required this.productPrice
+  });
 
 
 }

@@ -1,17 +1,26 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:foods_app/providers/product_provider.dart';
 import 'package:foods_app/screen/home/drawer_side.dart';
 import 'package:foods_app/screen/home/singal_product.dart';
 // ignore: unused_import
 import 'package:foods_app/screen/product_overview/product_overview.dart';
 import 'package:foods_app/screen/search/search.dart';
+import 'package:provider/provider.dart';
 //import 'package:foods_app/screen/product_overview.dart';
 //import 'package:foods_app/screen/singal_product.dart';
 
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
 
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  late ProductProvider productProvider;
 
   Widget listTile({required IconData icon, required String title}) {
     return ListTile(
@@ -27,11 +36,20 @@ class HomeScreen extends StatelessWidget {
   }
 
   @override
+  void initState() {
+    ProductProvider productProvider = Provider.of(context,listen: false);
+    productProvider.fatchFoodsproductData();
+    productProvider.fatchRecommendProductData();
+    productProvider.fatchPopularProductData();
+    super.initState();
+  }
+  @override
   Widget build(BuildContext context) {
+    // ProductProvider productProvider = Provider.of(context,);
+    productProvider = Provider.of(context);
     return Scaffold(
-     // backgroundColor: Colors.black,
       //backgroundColor: Color(0XF7D294),
-      backgroundColor: Colors.orange.shade100,
+      backgroundColor: Colors.orange.shade50,
       drawer: DrawerSide(),
       appBar: AppBar(
         
@@ -118,7 +136,7 @@ class HomeScreen extends StatelessWidget {
                             '30% Off',
                           style: TextStyle(
                             fontSize: 40,
-                            color: Colors.orange.shade100,
+                            color: Colors.orange.shade50,
                             fontWeight: FontWeight.bold),
                           ),
                           Padding(
@@ -136,7 +154,6 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Expanded(
                     child: Container(
-                      
                     ),
                   ),
                 ],
@@ -147,152 +164,112 @@ class HomeScreen extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Top foods'),
-                Text('view all', style: TextStyle(color: Colors.grey),)
+                Text('Top foods',style: TextStyle(fontWeight: FontWeight.bold)),
+                Text('view all', style: TextStyle(color: Colors.black45),)
               ],
             ),
         ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
+            
             child: Row(
-              
-              children: [
-                
-                SingalProduct(
-                  productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png',
-                  productName: 'Noodle',
-                 onTap: () {
-                   
+              children: productProvider.getFoodsProductDataList.map(
+                (foodsProductData) {
+                return SingalProduct(
+                  productImage: foodsProductData.productImage,
+                  productName: foodsProductData.productName,
+                  productPrice: foodsProductData.productPrice,
+                 onTap: () {                
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => ProductOverview(
-                        productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG78.png',
-                        productName: 'Noodle',
+                          productName:foodsProductData.productName,
+                          productImage: foodsProductData.productImage,
+                          productPrice: foodsProductData.productPrice,        
                       ),
                     ),
                    );
-                },
-                 
-                  ),
-                SingalProduct(productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG66.png',
-                productName: 'Spagetti',
-                onTap: () => {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ProductOverview(
-                          productImage: 'http://pngimg.com/uploads/noodle/noodle_PNG66.png',
-                        productName: 'Spagetti',
-                        ),
-                    ),
-                   )
-                },
-                ),
-                SingalProduct(productImage: 'https://www.pngkey.com/png/full/11-115437_free-png-fried-chicken-png-images-transparent-fried.png',
-                productName: 'Fire Chicken', 
-                onTap: (){
-                  Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ProductOverview(
-                          productImage: 'https://www.pngkey.com/png/full/11-115437_free-png-fried-chicken-png-images-transparent-fried.png',
-                        productName: 'Fire Chicken',
-                        ),
-                    ),
-                   );
-                },),
-                SingalProduct(productImage: 'https://huasenghong.co.th/wp-content/uploads/2018/02/WM-ข้าวผัดกุ้ง.png',
-                productName: 'Fire Rice', 
-                onTap: (){
-                  Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ProductOverview(
-                          productImage: 'https://lh3.googleusercontent.com/proxy/629tzGlO_w4l9nB2NTZXCcCfzaHHooHsdB5YukMr-j8yW_UwmWFbWg9T7KaUPKvCW9jPElEzDHZbOjrfQ4p3ZLQEWWGLgh0DS1-NPICAY3Oicgo',
-                        productName: 'Fire Rice',
-                        ),
-                    ),
-                   );
-                },),
-                SingalProduct(productImage: 'https://www.rosdee.co.th/wp-content/uploads/2017/09/Tom-Yum-Creamy-ต้มยำกุ้งน้ำข้น.png',
-                productName: 'Tom Yum Kung', 
-                onTap: (){
-                  Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ProductOverview(
-                          productImage: 'https://www.rosdee.co.th/wp-content/uploads/2017/09/Tom-Yum-Creamy-ต้มยำกุ้งน้ำข้น.png',
-                        productName: 'Tom Yum Kung',
-                        ),
-                    ),
-                   );
-                },)
-                
-               
-              ],
+                  },
+                );
+              },
+              )
+              .toList(),
             ),
           ),
+
           Padding(
           padding: const EdgeInsets.symmetric(vertical: 5),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Recommend foods'),
-                Text('view all', style: TextStyle(color: Colors.grey),)
+                Text('Recommend foods', style: TextStyle(fontWeight: FontWeight.bold),),
+                Text('view all', style: TextStyle(color: Colors.black45),)
               ],
             ),
         ),
         SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
-              children: [
-               SingalProduct(productImage: 'https://www.pngarts.com/files/2/Salad-PNG-Image.png',
-               productName: 'Salad', 
-               onTap: (){
-                 Navigator.of(context).push(
+              children: productProvider.getRecommendProductDataList.map(
+                (recommendProductData) {
+                return SingalProduct(
+                  productImage: recommendProductData.productImage,
+                  productName: recommendProductData.productName,
+                  productPrice: recommendProductData.productPrice,
+                 onTap: () {                
+                    Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => ProductOverview(
-                          productImage: 'https://www.pngarts.com/files/2/Salad-PNG-Image.png',
-                        productName: 'Salad',
-                        ),
+                          productName:recommendProductData.productName,
+                          productImage: recommendProductData.productImage,
+                          productPrice: recommendProductData.productPrice,        
+                      ),
                     ),
                    );
-               },),
-               SingalProduct(productImage: 'https://beyondthefitthailandblog.files.wordpress.com/2017/06/burger-png-file.png?w=810',
-               productName: 'Burger', 
-               onTap: (){
-                 Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ProductOverview(
-                          productImage: 'https://beyondthefitthailandblog.files.wordpress.com/2017/06/burger-png-file.png?w=810',
-                        productName: 'Burger',
-                        ),
-                    ),
-                   );
-               },),
-               SingalProduct(productImage: 'http://pngimg.com/uploads/hot_dog/hot_dog_PNG10217.png',
-               productName: 'Hotdog', 
-               onTap: (){
-                 Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ProductOverview(
-                          productImage: 'http://pngimg.com/uploads/hot_dog/hot_dog_PNG10217.png',
-                        productName: 'Hotdog',
-                        ),
-                    ),
-                   );
-               },),
-               SingalProduct(productImage: 'https://www.nicepng.com/png/full/68-689198_pizza-download-png-image-meat-pizza-png.png',
-               productName: 'Pizza', 
-               onTap: (){
-                 Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ProductOverview(
-                          productImage: 'https://www.nicepng.com/png/full/68-689198_pizza-download-png-image-meat-pizza-png.png',
-                        productName: 'Pizza',
-                        ),
-                    ),
-                   );
-               },),
-              ],
+                  },
+                );
+              },
+              )
+              .toList(),
             ),
           ), 
+          Padding(
+          padding: const EdgeInsets.symmetric(vertical: 5),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('Popular foods',style: TextStyle(fontWeight: FontWeight.bold)),
+                Text('view all', style: TextStyle(color: Colors.black45),)
+              ],
+            ),
+        ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            
+            child: Row(
+              children: productProvider.getPopularProductDataList.map(
+                (popularProductData) {
+                return SingalProduct(
+                  productImage: popularProductData.productImage,
+                  productName: popularProductData.productName,
+                  productPrice: popularProductData.productPrice,
+                 onTap: () {                
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ProductOverview(
+                          productName:popularProductData.productName,
+                          productImage: popularProductData.productImage,
+                          productPrice: popularProductData.productPrice,        
+                      ),
+                    ),
+                   );
+                  },
+                );
+              },
+              )
+              .toList(),
+            ),
+          ),
         ],),
       ),
     );

@@ -7,9 +7,10 @@ import 'package:foods_app/screen/product_overview/product_overview.dart';
 class SingalProduct extends StatelessWidget {
   final String productImage;
   final String productName;
+  final int productPrice;
   final Function onTap;
 
-  SingalProduct({required this.productImage, required this.productName,
+  SingalProduct({required this.productImage, required this.productName,required this.productPrice,
   required this.onTap
    });
 
@@ -50,7 +51,7 @@ class SingalProduct extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(productName,style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
-                                  Text('50\$/1 ',style: TextStyle(color: Colors.grey),),
+                                  Text('$productPrice\$/1 piece ',style: TextStyle(color: Colors.grey),),
                                   Row(
                                     children: [
                                       Expanded(
